@@ -1,0 +1,174 @@
+{
+	"name":"Auge Home Tour",
+	"defaults":{
+		"infos":{
+			"icon":"icons/white-circle.png"
+		}
+	},
+	"firstSceneId":"Entrada",
+	"scenes":[
+		{
+			"id":"Cozinha",
+			"photopanos":[
+				{"src":"1004-fraser-5-low.jpg","rotateY":200}
+			],
+			"navs":[
+				{"to":"Patio","txt":"Patio","rotateY":222},
+				{"to":"Entrada","txt":"Sair de Casa","rotateY":10}
+			],
+            "infos":[
+                {
+                    "icon":"icons/informacao-icon.png", "iconWidth":0.5,"iconHeight":0.5,
+	                "card":[                                        
+                        {"type":"image","src":"garden-table.jpg","ratio":1.9,"borderWidth":0},
+                        {"type":"header","txt":"Cozinha com 20m²!"},
+                        {"type":"content","txt":"Cozinha Planejada e espaçosa, ótima para passar muito tempo preparando comidas."},
+                        {"type":"footer","txt":"correto@gmail.com"}
+                        
+	                ],
+	                "width":3,
+	                "backgroundColor":"#ffffff",
+	                "rotateY":260,
+                    "rotateX":0
+                },
+                {
+                    "icon":"icons/planta-baixa-icon.png","iconWidth":0.5,"iconHeight":0.5,
+	                "card":[                                        
+                        {"type":"image","src":"planta-baixa.png"}
+                        
+	                ],
+	                "width":3,
+	                "backgroundColor":"#ffffff",
+	                "rotateY":260,
+                    "rotateX":12
+                },
+                {
+					"card":[
+						{"type":"video","src":"pedra-clara-cut-no-audio.mp4","ratio":1.7}
+					],
+					"width":4.6,
+					"backgroundColor":"#00000011",
+					"icon":"icons/video_information.png",
+					"iconWidth":0.5,
+					"iconHeight":0.5,
+					"rotateY":170
+				}
+            ],
+			"videos":[
+				{
+					"src":"hm-short.mp4","imgWidth":460,"imgHeight":300,"cmWidth":0.19,"rotateY":61.5, "pretransform":[{"translate": [0, 11, 0]}, {"rotateY": 0}]
+				}
+			],
+			"preloads":[
+				{"src":"1004-fraser-9-low.jpg"},
+				{"src":"hm-short.mp4"}
+			]
+		},
+		{
+			"id":"Patio",
+			"photopanos":[
+				{"src":"1004-fraser-9-low.jpg","rotateY":270}
+			],
+            "navs":[
+                {"to":"Entrada","txt":"Entrada","rotateY":111,"rotateX":6,
+                	"nextRotateY":130
+				},
+                {"to":"Cozinha","txt":"Cozinha","rotateY":100,"rotateX":6,
+                	"nextRotateY":130
+				}
+            ],
+            "infos":[
+                {
+                    "icon":"icons/informacao-icon.png", "iconWidth":0.3,"iconHeight":0.3,
+	                "card":[                                        
+                        {"type":"image","src":"garden-table.jpg","ratio":1.9,"borderWidth":0},
+                        {"type":"header","txt":"Pátio com 50m²!"},
+                        {"type":"content","txt":"Área de festas com churrasqueira e amplo gramado."},
+                        {"type":"content","txt":"Espaço para Fogueira e muita diversão."},
+                        {"type":"footer","txt":"correto@gmail.com"}
+                        
+	                ],
+	                "width":3,
+	                "backgroundColor":"#ffffff",
+	                "rotateY":280,
+                    "rotateX":7
+                },
+                {
+                    "icon":"icons/planta-baixa-icon.png","iconWidth":0.3,"iconHeight":0.3,
+	                "card":[                                        
+                        {"type":"image","src":"planta-baixa.png"}
+                        
+	                ],
+	                "width":3,
+	                "backgroundColor":"#ffffff",
+	                "rotateY":300,
+                    "rotateX":7
+                }
+            ],
+			"sounds":[
+				{"src":"sparrow.mp3","volume":1,"rotateY":160}
+			],
+			"videos":[
+				{
+					"src":"fire.mp4","imgWidth":512,"imgHeight":512,"cmWidth":0.259765625,"rotateY":180
+				}
+			],
+			"preloads":[
+				{"src":"1004-fraser-11-low.jpg"}
+			]
+		},
+		{
+			"id":"Entrada",
+			"photopanos":[
+				{"src":"1004-fraser-11-low.jpg","rotateY":350}
+			],
+			"navs":[
+				{"to":"Cozinha","txt":"Entrar na Casa","rotateY":0}
+			],
+            "infos":[
+                {
+                    "icon":"icons/informacao-icon.png", "iconWidth":0.3,"iconHeight":0.3,
+	                "card":[                                        
+                        {"type":"image","src":"garden-table.jpg","ratio":1.9,"borderWidth":0},
+                        {"type":"header","txt":"Casa com 3 Quartos e 100m²!"},
+                        {"type":"content","txt":"Imóvel com excelente localização, próximo a mercados, farmácias e centro comercial.","textColor":"#000000","fontSize":0.12},
+						{"type":"content","txt":"Possui um pátio grande com área de festas."},
+						{"type":"content","txt":"Cozinha Planejada e espaçosa, ótima para passar muito tempo preparando comidas."},
+                        {"type":"footer","txt":"correto@gmail.com"},
+                        {"type":"row","buttons":[
+							{"txt":"E-mail","uri":"mailto:correto@gmail.com"},
+							{"txt":"Mensagem","uri":"https://m.me/jrutke"},
+							{"txt":"Fone","uri":"tel:47991415698"}
+                        ]}
+	                ],
+	                "width":3,
+	                "backgroundColor":"#ffffff",
+	                "rotateY":13,
+                    "rotateX":0
+                },
+                {
+                    "icon":"icons/planta-baixa-icon.png","iconWidth":0.3,"iconHeight":0.3,
+	                "card":[                                        
+                        {"type":"image","src":"planta-baixa.png"}                       
+	                ],
+	                "width":3,
+	                "backgroundColor":"#ffffff",
+	                "rotateY":13,
+                    "rotateX":7
+                }
+            ],
+            "photos":[
+                {"src":"back-image-logo.png","imgWidth":2048,"imgHeight":311,"cmWidth":0.6,"rotateY":142},
+                {"src":"back-image-logo.png","imgWidth":2048,"imgHeight":311,"cmWidth":0.6,"rotateY":215},
+                {"src":"back-image-logo.png","imgWidth":2048,"imgHeight":311,"cmWidth":0.4,"rotateY":10,
+	                "opacity":0.2,"pretransform":[ {"translate": [-110, -10, 100]}, {"rotateY": 91} ] }
+            ],
+			"preloads":[
+				{"src":"garden-table.jpg"}
+			]
+		}
+	]
+}
+
+
+
